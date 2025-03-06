@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 INPUT 1 OUTPUT TEMPLATE</title>
+    <style>
+
+        body{ background-color: rgb(137, 188, 6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+  }
+
+        /* STYLE FOR THE INPUT FIELD */
+        #charInput {
+        background-color:white;
+        border:2px solid rgb(255, 237, 170) ;
+        background-color:aliceblue;
+        font-size: 1rem;
+        border-radius: 20px;
+        text-align: center;
+        color: green;
+        }
+        #charInput:hover{
+        border:2px solid rgb(29, 136, 0) ;
+ 
+        }
+
+        /* STYLE FOR THE SUBMIT BUTTON */
+        #submitButton {
+        color: rgb(255, 169, 56);
+        background-color:rgb(255, 237, 170);
+        text-align: center;
+        border-color: transparent;
+        font-family: 'roboto';
+        border:2px solid rgb(255, 255, 255);
+        font-size: 1rem;
+        border-radius: 20px;
+        }
+
+        #submitButton:hover{
+            scale: 1.2;
+            border:2px solid rgb(29, 136, 0) ;
+            color: rgb(255, 145, 0);
+            font-weight: 600;
+        }
+
+        /* STYLE FOR THE IMAGE */
+        #displayedImage {
+            display: none;
+            width: 22rem;
+      
+            animation: border 3s ease-in-out infinite;
+}
+@keyframes border{
+   0% {box-shadow: 0px 40px 50px rgb(251, 244, 35)};
+   50% {box-shadow: 0px 10px 20px rgb(255, 255, 255)};
+   50% {box-shadow: 10px 20px 30px rgb(141, 244, 126)};
+}
+
+        .text1{
+            color: rgb(255, 233, 137);
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 2.5rem;
+            margin: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .text2{
+            color: rgb(255, 252, 160);
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 1rem;
+            margin: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 200;
+        }
+
+
+        .search-container {
+         display: flex;
+         align-items: center;
+         gap: 10px; 
+         margin-top:3rem ;
+         margin-bottom: 3rem;
+}
+
+       .cd{
+        display: block;
+        width: 8rem;
+        height:auto ;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        animation:rotateImage 3s linear infinite  ;
+       }
+       @keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#displayedImage {
+            display: none;
+            width: 18rem;
+            animation: border 3s ease-in-out infinite;
+}
+@keyframes border{
+   0% {box-shadow: 0px 30px 30px rgb(55, 113, 27)};
+   50% {box-shadow: 0px 10px 20px rgb(0, 153, 59)};
+   50% {box-shadow: 10px 20px 30px rgb(166, 255, 152)};
+}
+
+@media(max-width:768px){
+    .text1{
+            color: rgb(255, 249, 222);
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 1.7rem;
+            margin: 0.5rem;
+            margin-top: 2rem;
+        }
+        .text2{
+            color: rgb(192, 255, 160);
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 0.8rem;
+            margin: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 200;
+        }
+        body{ background-color: rgb(63, 88, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+  }
+}
+
+.cd{
+        display: block;
+        width: 8rem;
+        height:auto ;
+        margin-top: 1rem;
+        margin-bottom: 0.2rem;
+        animation:rotateImage 3s linear infinite  ;
+       }
+
+       #charInput {
+        background-color:rgb(215, 255, 207);
+        border:2px solid rgb(4, 57, 0) ;
+        font-size: 1rem;
+        border-radius: 20px;
+        text-align: center;
+        color: rgb(178, 86, 0);
+        }
+        #charInput:hover{
+        border:2px solid rgb(255, 145, 0) ;
+ 
+        }
+
+        /* STYLE FOR THE SUBMIT BUTTON */
+        #submitButton {
+        color: rgb(4, 57, 0) ;
+        background-color:rgb(131, 162, 22);
+        text-align: center;
+        border-color: transparent;
+        font-family: 'roboto';
+        border:2px solid rgb(4, 57, 0) ;
+        font-size: 1rem;
+        border-radius: 20px;
+        }
+
+        #submitButton:hover{
+            scale: 1.2;
+            border:2px solid rgb(29, 136, 0) ;
+            color: rgb(255, 145, 0);
+            font-weight: 600;
+        }
+        .cd{
+        display: block;
+        width: 8rem;
+        height:auto ;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        animation:rotateImage 3s linear infinite reverse ;
+       }
+       @keyframes rotateImage {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }}
+    .search-container {
+         display: flex;
+         align-items: center;
+         gap: 10px; 
+         margin-top:1rem ;
+         margin-bottom: 3rem;
+}
+    </style>
+</head>
+<body>
+
+    <h1 class="text1">Find your favorite track</h1>
+    <p1 class="text2">Input A-Z to find your favorite track</p1>
+    <!-- INPUT FIELD FOR 1 CHARACTER -->
+
+    <img src="asset/CD-ROM.png" alt="cd" class="cd">
+
+ <div class="search-container">
+    <input type="text" id="charInput" maxlength="1">
+
+    <!-- BUTTON TO DISPLAY IMAGE -->
+    <button onclick="displayImage()" id="submitButton">FIND</button>
+ </div>
+    <!-- IMAGE TO DISPLAY -->
+    <img id="displayedImage" src="" alt="Displayed Image">
+
+
+    <!-- Image Display Script Below -->
+    <script>
+        // Array of images
+        // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
+        const images = [
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3091.JPG", //A
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3097.JPG", //B
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3095.JPG", //C
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3094.JPG", //D
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3096.JPG", //E
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3099.JPG", //F
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3100.JPG", //G
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3101.JPG", //H
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3102.JPG", //I
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3103.JPG", //J
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3104.JPG", //K
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3105.JPG", //L
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3106.JPG", //M
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3107.JPG", //N
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3108.JPG", //O
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3109.JPG", //P
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3110.JPG", //Q
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3111.JPG", //R
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3112.JPG", //S
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3113.JPG", //T
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3114.JPG", //U
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3115.JPG", //V
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3116.JPG", //W
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3117.JPG", //X
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3118.JPG", //Y
+            "/Users/chensixing/Desktop/favoritetrack/asset/IMG_3120.JPG"  //Z
+        ];
+
+        function displayImage() {
+            const input = document.getElementById("charInput").value.toUpperCase();
+            const imgElement = document.getElementById("displayedImage");
+            
+            // Assign an image based on character (A-Z)
+            const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
+            if (index >= 0 && index < images.length) {
+                imgElement.src = images[index];
+                imgElement.style.display = "block";
+            } else {
+                /* 
+                alert("Please enter a letter between A and Z.");
+                imgElement.style.display = "none";
+                */
+
+                // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
+                imgElement.src = "/Users/chensixing/Desktop/input/asset/none.png"
+                imgElement.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
